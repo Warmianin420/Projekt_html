@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Need4Drive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Serwis poświęcony motoryzacji" />
+	<meta name="keywords" content="Formuła 1, Pirelli, F1, RWD, drift" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		a {
+				color:#ffffff
+			}
+	</style>
+	<script type="text/javascript" src="galeria.js"></script>
+	
+
+</head>
+
+<body>
+	
+	<div id="container">
+	
+		<div id="logo">
+			<a href='http://need4drive.cba.pl/'><img src='tło.jpg' class='logo' alt='Need4Drive' title="Need4Drive" /></a>
+		</div>
+		
+		<div id="menu">
+			
+			<ol>
+				<li><a href="index.html" style="text-decoration: none" >Strona główna</a></li>
+				<li><a href="mistrzostwa.html" style="text-decoration: none" >Mistrzostwa</a>
+						<ul>
+							<li><a href="formule1.html" style="text-decoration: none" >Formuła 1</a></li>
+							<li><a href="formule2.html" style="text-decoration: none" >Formuła 2</a></li>
+							<li><a href="formule3.html" style="text-decoration: none" >Formuła 3</a></li>
+							<li><a href="indy500.html" style="text-decoration: none" >Indy 500</a></li>
+							<li><a href="renault3.5.html" style="text-decoration: none" >Renault 3.5</a></li>
+						</ul>
+						</li>
+				<li><a href="silniki.html" style="text-decoration: none" >Silniki</a>
+						<ul>
+							<li><a href="R4.html" style="text-decoration: none"  >R4</a></li>
+							<li><a href="R6.html" style="text-decoration: none" >R6</a></li>
+							<li><a href="V6.html" style="text-decoration: none" >V6</a></li>
+							<li><a href="V8.html" style="text-decoration: none" >V8</a></li>
+							<li><a href="V12.html" style="text-decoration: none" >V12</a></li>
+						</ul>
+						<li><a href="about.html" style="text-decoration: none" >O autorze</a></li>
+				<li><a href="kontakt.html" style="text-decoration: none" >Kontakt</a></li>
+				
+			
+			</ol>
+	
+			
+		</div>
+		
+		
+		
+		<div id="content">
+			<span class="bigtitle" color="black">Silnik widlasty sześciocylindrowy</span>
+			
+			<div class="dottedline"></div>
+			Silnik V6 to rodzaj silnika spalinowego, który charakteryzuje się układem sześciu cylindrów rozmieszczonych w dwóch bankach pod kątem, tworząc kształt litery "V". Ten układ pozwala na bardziej kompaktową budowę silnika w porównaniu do tradycyjnych silników rzędowych, co jest szczególnie korzystne w samochodach wymagających oszczędności miejsca. Silniki V6 są znane z dobrego wyważenia między mocą a efektywnością, oferując płynną pracę i mniejsze drgania niż większe silniki V8 czy V10, a jednocześnie zapewniając lepszą wydajność niż mniejsze silniki czterocylindrowe. 
+			<br><br>
+			Wiele modeli silników V6 zostało wyposażonych w nowoczesne technologie, takie jak turbodoładowanie, bezpośredni wtrysk paliwa czy zmienne czasy otwierania zaworów, co zwiększa ich wydajność i redukuje zużycie paliwa. Silniki te są szeroko stosowane w różnorodnych pojazdach, od rodzinnych sedanów przez sportowe coupe, aż po SUV-y i lekkie ciężarówki, dzięki czemu stanowią wszechstronny wybór spełniający różnorodne potrzeby motoryzacyjne.
+			<br><br>
+		
+		<div class="galeria" style="max-width:900px">
+  
+  <center><img class="mySlides" src="images/v6.0.jpg" style="width:100%"></center>
+  <img class="mySlides" src="images/v6.1.jpg" style="width:100%">
+  <img class="mySlides" src="images/v6.2.jpg" style="width:100%">
+  <img class="mySlides" src="images/v6.3.jpg" style="width:100%">
+  </center>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); 
+}
+</script>
+
+		</div>
+		
+		
+		
+		<div id="footer">
+			Łukasz Śliwa  <br> Poznaj RWD &copy; 2024 Wszelkie prawa zastrzeżone 
+		</div>
+	
+	</div>
+	
+
+	
+</body>
+</html>
