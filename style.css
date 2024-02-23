@@ -1,127 +1,736 @@
-﻿body
-{
-	background-color: #404040;
-	background-image: url("tło2.jpg");
-	font-family: 'Lato', sans-serif;
+﻿body {
+    background-color: #404040;
+    background-image: url("images/tło2.jpg");
+    font-family: 'Lato', sans-serif;
 }
 
-#container
-{
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#logo
-{
-	color: white;
-	margin-top: 20px;
-	font-size: 44px;
-	letter-spacing: 3px;
-	font-weight: 900;
+#logo {
+    color: white;
+    margin-top: 20px;
+    font-size: 44px;
+    letter-spacing: 3px;
+    font-weight: 900;
 }
 
-#menu
-{
-	background-color: #303030;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	color: #ffffff;
-	padding: 10px;
-	text-decoration: none;
-	text-align: center;
+#menu {
+    background-color: #303030;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
 }
+
 #menu a {
-    font-size: 23px; /* Ustaw odpowiedni rozmiar czcionki */
+    font-size: 23px;
 }
 
-.nav
-{ 
-	width: 100%;
-	padding: 10px 0;
-	background-color: #c34f4f;
-	text-align: center;
-	border-top: 1px solid #751b1b;
-	border-bottom: 1px solid #751b1b;
-
+.nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #c34f4f;
+    text-align: center;
+    border-top: 1px solid #751b1b;
+    border-bottom: 1px solid #751b1b;
 }
+
 .centered-content {
     display: flex;
     justify-content: center;
-  }
-
-#content
-{
-	clear:both;
-	padding: 40px;
-	width: 917px;
-	background-color: #dedede;
-	min-height: 580px;
-	text-align: justify;
-	color: black;
-}
-#social
-{
-	background-color: #303030;
-	clear: both;
-	color: orange;
-	text-align: center;
-	padding: 40px;
-	width: 917px;
-	min-height: 40px;
-	font-size: 10px;
-	opacity:0.9;
-	margin-top: 25px;
-}
-#social:hover{	
-	background-color: black;	
 }
 
-#footer .heading{color:#FFFFFF;}
-#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
-#footer input, #footer button{border-color:transparent;}
-#footer input{color:#474747; background-color:#C1C2C4;}
-#footer input:focus{border-color:#95103B;}
-#footer button{color:#FFFFFF; background-color:#95103B;}
-
-#footer
-{
-	clear: both;
-	color: white;
-	text-align: center;
-	padding: 20px;
-	font-size: 18px;
+#content {
+    clear: both;
+    padding: 40px;
+    width: 917px;
+    background-color: #dedede;
+    min-height: 580px;
+    text-align: justify;
+    color: black;
 }
 
+/*
+    Strona główna - sekcja główna strony
+
+    Poniżej jest przedstawiona strona główna mojej strony. Składa się z kontenera, w którym znajduje się tekst z nagłówkiem i zdjęcie samochodu.
+
+    **#content**: Element o id "content" ma szerokość 917px, minimalną wysokość jest ustawiona na 580px, padding na 40px. Tekst jest wyjustowany i ma czarny kolor czcionki.
+
+    **.bigtitle**: Znacznik o tej klasie ma rozmiar czcionki 32px, pogrubioną czcionkę, rozstrzelone litery na 2px i czarny kolor czcionki.
+
+    **.dottedline**: Kontener o tej klasie wysokość 5px, górny margines na 15px, dolny marginem na 20px i dolne obramowanie jest kropkowane o grubości 2px.
+
+    **.centered-content**: Kontener o tej klasie ma właściwość display:flex, przez co jego elementy (tutaj zdjęcie) wyświetlają się elastycznie. Elementy kontenera są wyśrodkowane.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle">Rear Wheel Drive </span>
+
+		<div class="dottedline"></div>
+
+		Witaj w świecie motoryzacji, gdzie każde obroty silnika to muzyka dla Twoich uszu, a każda droga to
+		obietnica przygody. Na naszej stronie odkryjesz pasję, która napędza entuzjastów czterech kółek na całym
+		świecie.
+		Odkryj najnowsze modele, które przesuwają granice możliwości. Z nami zanurzysz się w fascynujący świat
+		zaawansowanych technologii bolidów Formuły 1, gdzie inżynierowie z każdym sezonem przekształcają hybrydowe
+		marzenia w rzeczywistość. Pasjonujemy się nie tylko postępem technologicznym, ale także czystym,
+		nieokrzesanym entuzjazmem, jaki budzą samochody z tylnym napędem. Czy to dla doskonałej równowagi podczas
+		jazdy, czy dla radości płynącej z kontrolowanego poślizgu - tylny napęd ma w sobie coś magicznego. Przeżyj z
+		nami tę pasję, eksplorując modele, które kultywują tę klasyczną konfigurację napędu, dostarczając
+		niezapomnianych wrażeń z każdego przejechanego kilometra. <br> <br>
+		<div class="centered-content"><img src="images/bmw.jpg"></div>
+	</div>
+
+    Style guide: 1.0
+*/
+
+/*
+    Mistrzostwa - sekcja mistrzostw
+
+    Poniżej jest przedstawiona podstrona mistrzostw. Posiada kontener, w którym jest zdjęcie wraz z tekstem.
+
+    Markup:
+    <div id="content">
+		<span class="bigtitle" color="black">Mistrzostwa </span>
+
+		<div class="dottedline"></div>
+		<div class="centered-content">Spis wybranych mistrzostw.</div>
+		<div class="centered-content"><img src="images/zandvoort.jpg"></div>
+
+	</div>
+
+    Style guide: 2.0
+*/
+
+/*
+    Mistrzostwa Formuła 1 - sekcja formuły 1
+
+    Poniżej jest przedstawiona podstrona mistrzostw formuły 1. Posiada kontener, w którym jest zdjęcie wraz z tekstem z nagłówkiem.
+
+    **.przyklad**: Kontener o tej klasie ma ustawione overflow:hidden, co oznacza, że zawartość która nie zmieści się w kontenerze nie będzie wypływała poza kontener. Ustawiono także padding na 0.
+    
+	**.przyklad img**: Zdjęcia w kontenerze o tej klasie są wyśrodkowane i mają zerowy górny i dolny margines. Są także wyświetlane jako elementy blokowe (display: block). Ustawiona została także animacja trwająca przez 3 sekundy.
+    
+	**.przyklad img:hover**: Po najechaniu na zdjęcie w kontenerze jest ono powiększane o 20%.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle">Formuła 1 </span>
+
+			<div class="dottedline"></div>
+
+			Formuła 1 (inaczej Mistrzostwa Świata Formuły 1, oficjalny skrót F1) – przeprowadzany regularnie (corocznie)
+			od 1950 roku cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych, znany również jako
+			wyścigi Grand Prix, a jednocześnie klasa biorących w nich udział jednomiejscowych samochodów wyścigowych o
+			otwartym nadwoziu. Dyscyplina sportu zapoczątkowana w Europie, obecnie o zasięgu globalnym, organizowana w
+			Europie, Ameryce Południowej, Ameryce Północnej, Azji i Australii. Podczas danego sezonu odbywa się od
+			kilkunastu do dwudziestu kilku wyścigów, poszczególnych grand prix, na wydzielonych torach ulicznych i na
+			specjalnie stworzonych do tego celu torach zamkniętych.
+			<br> <br>
+			<div class="przyklad">
+				<div class="centered-content"><img src="images/f1.jpg" alt="powiekszający się obrazek"
+						class="alignleft size-medium wp-image-7000"></div>
+			</div>
+	</div>
+
+    Style guide: 2.1
+*/
+
+/*
+    Mistrzostwa Formuła 2 - sekcja formuły 2
+
+    Poniżej jest przedstawiona podstrona mistrzostw formuły 2. Posiada kontener, w którym są zdjęcia wraz z tekstem z nagłówkami.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle">Formuła 2</span>
+
+			<div class="dottedline"></div>
+
+			Formuła 2 to serce wyścigowej ekscytacji i kuźnia przyszłych mistrzów. To tu, o krok od szczytu motorsportu,
+			zdolności i determinacja młodych kierowców są poddawane największym próbom. Seria ta działa jako bezpośredni
+			przedsionek do Formuły 1, zapewniając zawodnikom platformę do rozwoju, rywalizacji i demonstracji ich
+			umiejętności przed dołączeniem do elity wyścigowej.
+			<br><br><br>
+			<b>Technologiczne Dziedzictwo Formuły 1</b>
+			<br><br>
+			Bolidy Formuły 2 są zaprojektowane z myślą o równości szans, gdzie inżynieria i talent spotykają się na
+			środku toru. Chociaż mniej zaawansowane technologicznie niż ich kuzyni z Formuły 1, bolidy F2 wciąż są
+			szczytem innowacji w swojej klasie. Wykorzystują jednolite, potężne silniki i zaawansowane systemy
+			aerodynamiczne, co pozwala kierowcom na naukę zarządzania energią i oponami, które są kluczowe w wyższych
+			kategoriach wyścigów.
+			<br><br>
+			<b>Rywalizacja i Rozwój</b>
+			<br><br>
+			Formuła 2 to nie tylko test prędkości, ale i charakteru. Kalendarz wyścigowy obejmuje różnorodne tory na
+			całym świecie, co pozwala kierowcom zdobywać doświadczenie w różnych warunkach i przygotowuje ich do zmagań
+			na najwyższym poziomie. Zawody F2 często towarzyszą weekendom Grand Prix Formuły 1, dając kierowcom
+			możliwość pokazania się na tych samych arenach, co ich idole.
+			<br><br>
+			<b>Platforma dla Przyszłych Gwiazd</b>
+			<br><br>
+			Wiele gwiazd Formuły 1 rozpoczęło swoją karierę od Formuły 2, która jest znana z bycia testem dla
+			najbardziej obiecujących talentów wyścigowych. Kierowcy muszą wykazać nie tylko szybkość, ale również
+			zdolność do strategicznego myślenia, zarządzania wyścigiem i technicznego zrozumienia swoich maszyn.
+
+			Formuła 2 to więcej niż seria wyścigów; to cała społeczność pasjonatów, zespołów, inżynierów i kibiców,
+			którzy razem tworzą elektryzującą atmosferę rozwoju i rywalizacji. To tutaj przyszłość motorsportu staje się
+			dzisiaj.
+			<br><br>
+
+			<br> <br>
+			<div class="przyklad">
+				<div class="centered-content"><img src="images/f2.jpg" alt="powiekszający się obrazek"
+						class="alignleft size-medium wp-image-7000"></div>
+
+			</div>
+		</div>
+
+    Style guide: 2.2
+*/
+
+/*
+    Mistrzostwa Formuła 3 - sekcja formuły 3
+
+    Poniżej jest przedstawiona podstrona mistrzostw formuły 3. Posiada kontener, w którym są zdjęcia wraz z tekstem z nagłówkami.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle">Formuła 3</span>
+
+			<div class="dottedline"></div>
+
+			Formuła 3 to wyjątkowy poziom wyścigów, który stanowi kluczowy etap w karierze młodych kierowców
+			aspirujących do najwyższych osiągnięć w motorsporcie. To tu, na krzyżówce talentu i ambicji, przyszłe
+			gwiazdy Formuły 1 kształtują swoje umiejętności, ucząc się subtelnej sztuki wyścigowej i rozwijając swoje
+			zdolności w ścisłej i wymagającej konkurencji.
+			<br><br>
+			<b>Podwaliny Przyszłych Mistrzów</b>
+			<br><br>
+			Bolidy Formuły 3, chociaż mniej zaawansowane niż ich odpowiedniki w Formule 2 i Formule 1, są
+			zaprojektowane, by promować równość i uczciwą rywalizację. Każdy bolid jest wyposażony w identyczne
+			komponenty, co oznacza, że sukces w wyścigu zależy głównie od umiejętności kierowcy i pracy zespołu. Z tych
+			powodów Formuła 3 jest uznawana za jedną z najlepszych aren do wyłaniania talentów.
+			<br><br>
+			<b>Technika i Strategia</b>
+			<br><br>
+			Formuła 3 to nie tylko próba szybkości, ale również test strategii wyścigowej i technicznej wiedzy. Kierowcy
+			muszą nauczyć się optymalnego zarządzania oponami, skutecznego wykorzystywania DRS (Drag Reduction System)
+			oraz dokładnego przestrzegania regulaminów technicznych, co przygotowuje ich do przyszłych wyzwań na
+			wyższych szczeblach wyścigów.
+			<br><br>
+			<b>Rozwój i Wyzwanie</b>
+			<br><br>
+			Zawody Formuły 3 odbywają się na znanych torach wyścigowych na całym świecie, często towarzysząc wydarzeniom
+			Formuły 1, co pozwala młodym kierowcom na zdobywanie cennego doświadczenia w profesjonalnym środowisku. Jest
+			to również szansa, by zaprezentować się potencjalnym sponsorom i zespołom z wyższych klas wyścigowych.
+			<br><br>
+			<b>Bramy do Większych Osiągnięć</b>
+			<br><br>
+			Formuła 3 jest nie tylko platformą do rywalizacji, ale również społecznością, która wspiera rozwój młodych
+			talentów. Z intensywnym programem wyścigowym i szansami na rozwój kariery, Formuła 3 to niezwykła podróż dla
+			tych, którzy mają marzenia o staniu na najwyższym podium motorsportu.
+
+			<br><br>
+
+			<br> <br>
+			<div class="przyklad">
+				<div class="centered-content"><img src="images/f3.jpg" alt="powiekszający się obrazek"
+						class="alignleft size-medium wp-image-7000"></div>
+
+			</div>
+		</div>
+
+    Style guide: 2.3
+*/
+
+/*
+    Mistrzostwa Indy 500 - sekcja Indy 500
+
+    Poniżej jest przedstawiona podstrona mistrzostw Indy 500. Posiada kontener, w którym są zdjęcia wraz z tekstem z nagłówkami.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle">Indy 500</span>
+
+			<div class="dottedline"></div>
+
+			Indy 500, znany również jako Indianapolis 500, to jeden z najstarszych i najbardziej prestiżowych wyścigów
+			samochodowych na świecie. Odbywający się corocznie w ostatni weekend maja na słynnym Indianapolis Motor
+			Speedway w Indianie, USA, jest uważany za część potrójnej korony wyścigów motorowych, obok Grand Prix Monako
+			i 24-godzinnego wyścigu Le Mans.
+			<br><br>
+			<b>Ponad Stuletnia Historia</b>
+			<br><br>
+			Z ponad 100-letnią historią, Indy 500 przechodził przez różne ery motorsportu, od klasycznych roadsterów po
+			współczesne, zaawansowane technologicznie bolidy. Zawody te są hołdem dla odwagi kierowców i innowacyjności
+			inżynieryjnej, przyciągającym setki tysięcy widzów na tor oraz miliony przed ekrany telewizorów.
+			<br><br>
+			<b>Tradycja i Nowoczesność</b>
+			<br><br>
+			Okrążenie słynnej owalnej trasy Indianapolis Motor Speedway, która liczy 2,5 mili, wymaga od kierowców
+			niezwykłej precyzji i odwagi. Indy 500 to nie tylko test prędkości, ale również wytrzymałości, zarówno
+			mechanicznej, jak i fizycznej dla kierowców, którzy muszą wytrzymać ekstremalne siły przeciążenia przez 500
+			mil.
+			<br><br>
+			<b>Prędkość i Strategia</b>
+			<br><br>
+			W Indy 500, strategia pit-stopów, zarządzanie paliwem i oponami oraz zdolność do adaptacji do zmieniających
+			się warunków na torze są kluczowe dla zwycięstwa. Wyścig jest często nieprzewidywalny, z wieloma
+			zaskakującymi zwrotami akcji, a finisz często rozgrywa się w ostatnich okrążeniach, co dodaje dramaturgii i
+			emocji.
+			<br><br>
+			<b>Kulturalne Święto</b>
+			<br><br>
+			Indy 500 to więcej niż wyścig; to kulturowe święto. Znane jest z wielu tradycji, takich jak picie mleka
+			przez zwycięzcę, wznoszące się balony w powietrze przed wyścigiem, czy śpiewanie "Back Home Again in
+			Indiana" przed startem. To wydarzenie, które przyciąga nie tylko zagorzałych fanów wyścigów, ale także
+			rodziny, które uczestniczą w corocznych obchodach tego sportowego święta.
+
+			Indy 500 pozostaje jednym z najbardziej emocjonujących wyścigów w kalendarzu motorsportowym i jest
+			absolutnym must-see dla każdego fana wyścigów.
+
+			<br><br>
+
+			<br> <br>
+			<div class="przyklad">
+				<div class="centered-content"><img src="images/indy500.jpg" alt="powiekszający się obrazek"
+						class="alignleft size-medium wp-image-7000"></div>
+
+			</div>
+		</div>
+
+    Style guide: 2.4
+*/
+
+/*
+    Mistrzostwa Renault 3.5  - sekcja  renault 3.5 
+
+    Poniżej jest przedstawiona podstrona mistrzostw Renault 3.5 . Posiada kontener,  w którym jest zdjęcie wraz z tekstem z nagłówkiem.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle">Renault 3.5</span>
+
+			<div class="dottedline"></div>
+			Formuła Renault 3.5 to wyższy poziom wyścigów w ramach serii Formuła Renault, uznawany za krok przed
+			przejściem do jeszcze bardziej zaawansowanych formuł wyścigowych. Seria ta zaczęła się w 2003 roku jako
+			Eurocup Formula Renault V6, a w 2005 roku przekształciła się w World Series by Renault. Wykorzystuje
+			samochody z silnikami V6 i V8 o mocy odpowiednio od 425 do 530 KM. Wyścigi te były organizowane do 2017
+			roku, kiedy to seria została zakończona. Formuła Renault 3.5 była znana z silnego wsparcia ze strony Renault
+			i wykorzystywania jednolitych samochodów wyścigowych, co zapewniało równy poziom rywalizacji. Wiele znanych
+			obecnie kierowców Formuły 1 rozpoczynało swoją karierę właśnie od tej serii​​.
 
 
-.bigtitle
-{
-	font-size: 32px;
-	font-weight: 900;
-	letter-spacing: 2px;
-	color: black;
+			<br><br>
+
+			<br> <br>
+			<div class="przyklad">
+				<div class="centered-content"><img src="images/renault3.5.jpg" alt="powiekszający się obrazek"
+						class="alignleft size-medium wp-image-7000"></div>
+
+			</div>
+		</div>
+
+    Style guide: 2.5
+*/
+
+/*
+    Silniki - sekcja silników
+
+    Poniżej jest przedstawiona podstrona silników.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle">Silniki </span>
+			
+			<div class="dottedline"></div>
+			<div class="centered-content">Spis najpopularniejszych silników</div>		
+	</div>	
+
+    Style guide: 3.0
+*/
+
+/*
+    Silniki R4 - sekcja silników rzędowych 4-cylindrowych
+
+    Poniżej jest przedstawiona podstrona silników R4. Posiada kontener, w którym jest karuzela zdjęć wraz z tekstem nad nim i nagłówkiem.
+
+    - **#left**: Kontener o tej klasie dziedziczy po kontenerze #content.
+    
+	- **.galeria**: Kontener o tej klasie dziedziczy po kontenerze #content, ale nadpisuje maksymalną szerokość na 900px.
+    
+	- **.mySlides**: Zdjęcia o tej klasie dziedziczą po kontenerze #content.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle" color="black">Silnik rzędowy 4-cylindrowy</span>
+
+			<div class="dottedline"></div>
+
+			<div id="left">
+
+
+				Silnik R4 to rodzaj silnika spalinowego o układzie rzędowym, co oznacza, że wszystkie cztery cylindry są
+				ułożone w jednej linii. Jest to najpopularniejszy układ silnika w samochodach osobowych ze względu na
+				jego kompaktowe wymiary i stosunkowo prostą konstrukcję. Każdy z cylindrów zawiera tłok, który porusza
+				się w górę i w dół w cylindrze, napędzany wybuchem mieszanki paliwowo-powietrznej. Tłoki są połączone z
+				wałem korbowym, który przekształca ich ruch posuwisto-zwrotny na ruch obrotowy wykorzystywany do
+				napędzania koła.
+				<br><br>
+				Silniki R4 są cenione za równowagę między wydajnością a ekonomią paliwową. Są one stosunkowo łatwe w
+				produkcji i utrzymaniu, co czyni je ekonomicznym wyborem dla producentów i konsumentów. Zwykle stosuje
+				się je w samochodach z napędem na przednie koła, ale mogą być również używane w pojazdach z napędem na
+				tylne lub wszystkie koła.
+				<br><br>
+				Znane są z dobrej reakcji na przyspieszenie i mogą być dostrojone do różnych zastosowań, od codziennego
+				użytku po sportowe jazdy. Warianty tych silników mogą być wyposażone w turbodoładowanie w celu
+				zwiększenia mocy i momentu obrotowego bez zwiększania objętości skokowej silnika.
+				<br><br>
+
+				<div class="galeria" style="max-width:900px">
+
+					<div class="centered-content"><img class="mySlides" src="images/r4.1.jpg" style="width:100%">
+						<img class="mySlides" src="images/honda.jpg" style="width:100%">
+						<img class="mySlides" src="images/r4.2.jpg" style="width:100%">
+						<img class="mySlides" src="images/r4.jpg" style="width:100%">
+					</div>
+				</div>
+			</div>
+		</div>
+
+    Style guide: 3.1
+*/
+
+/*
+    Silniki R6 - sekcja silników rzędowych 6-cylindrowych
+
+    Poniżej jest przedstawiona podstrona silników R6. Posiada kontener, w którym jest karuzela zdjęć wraz z tekstem nad nim i nagłówkiem.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle" color="black">Silnik rzędowy 6-cylindowy</span>
+
+			<div class="dottedline"></div>
+
+
+			Silnik R6, znany także jako rzędowy silnik sześciocylindrowy, to typ silnika spalinowego, gdzie sześć
+			cylindrów jest rozmieszczonych w jednej linii, najczęściej pionowo. Jest to układ, który łączy zalety
+			prostoty konstrukcyjnej i gładkiej pracy z wysoką wydajnością i mocą.
+			<br><br>
+			Silniki R6 są doceniane za ich równomierną pracę i równowagę, ponieważ układ rzędowy pozwala na naturalną
+			równowagę kinematyczną i dynamiczną, minimalizując wibracje bez konieczności stosowania dodatkowych wałków
+			wyważających. Charakteryzują się liniową charakterystyką dostarczania mocy i często są opisywane jako
+			bardziej "elastyczne" w porównaniu z mniejszymi silnikami R4, oferując większy moment obrotowy w szerszym
+			zakresie obrotów.
+			<br><br>
+			Silniki R6 są często stosowane w samochodach klasy premium, sportowych i luksusowych, gdzie kładzie się
+			nacisk na płynną i cichą pracę, a także wydajność. Są one szczególnie popularne w modelach marki BMW, gdzie
+			tradycyjnie były stosowane w większości modeli serii. W porównaniu do silników V6, silniki R6 są zwykle
+			dłuższe, ale mają prostszą konstrukcję i są łatwiejsze w obsłudze i naprawie.
+			<br><br>
+			Z czasem, z powodu dążenia do redukcji wymiarów silników i poprawy ich ekonomii (przy równoczesnym
+			zachowaniu lub zwiększaniu mocy), silniki R6 stają się mniej powszechne, ustępując miejsca mniejszym i
+			bardziej kompaktowym konfiguracjom V6, które łatwiej jest umieścić w różnych konfiguracjach pojazdów.
+			Jednakże, dla wielu entuzjastów motoryzacji, klasyczny rzędowy sześciocylindrowy silnik pozostaje ikoną ze
+			względu na swoje unikalne cechy, takie jak dźwięk i sposób dostarczania mocy.
+
+			<br><br>
+			<div class="galeria" style="max-width:900px">
+
+				<div class="centered-content"><img class="mySlides" src="images/r6.jpg" style="width:100%">
+					<img class="mySlides" src="images/r6.0.jpg" style="width:100%">
+					<img class="mySlides" src="images/r6.2.jpg" style="width:100%">
+					<img class="mySlides" src="images/r6.1.jpg" style="width:100%">
+				</div>
+			</div>
+		</div>
+
+    Style guide: 3.2
+*/
+
+/*
+    Silniki V6 - sekcja silników widlasto sześciocylindrowych
+
+    Poniżej jest przedstawiona podstrona silników R6. Posiada kontener, w którym jest karuzela zdjęć wraz z tekstem nad nim i nagłówkiem.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle" color="black">Silnik widlasty sześciocylindrowy</span>
+
+			<div class="dottedline"></div>
+			Silnik V6 to rodzaj silnika spalinowego, który charakteryzuje się układem sześciu cylindrów rozmieszczonych
+			w dwóch bankach pod kątem, tworząc kształt litery "V". Ten układ pozwala na bardziej kompaktową budowę
+			silnika w porównaniu do tradycyjnych silników rzędowych, co jest szczególnie korzystne w samochodach
+			wymagających oszczędności miejsca. Silniki V6 są znane z dobrego wyważenia między mocą a efektywnością,
+			oferując płynną pracę i mniejsze drgania niż większe silniki V8 czy V10, a jednocześnie zapewniając lepszą
+			wydajność niż mniejsze silniki czterocylindrowe.
+			<br><br>
+			Wiele modeli silników V6 zostało wyposażonych w nowoczesne technologie, takie jak turbodoładowanie,
+			bezpośredni wtrysk paliwa czy zmienne czasy otwierania zaworów, co zwiększa ich wydajność i redukuje zużycie
+			paliwa. Silniki te są szeroko stosowane w różnorodnych pojazdach, od rodzinnych sedanów przez sportowe
+			coupe, aż po SUV-y i lekkie ciężarówki, dzięki czemu stanowią wszechstronny wybór spełniający różnorodne
+			potrzeby motoryzacyjne.
+			<br><br>
+
+			<div class="galeria" style="max-width:900px">
+
+				<div class="centered-content"><img class="mySlides" src="images/v6.0.jpg" style="width:100%">
+					<img class="mySlides" src="images/v6.1.jpg" style="width:100%">
+					<img class="mySlides" src="images/v6.2.jpg" style="width:100%">
+					<img class="mySlides" src="images/v6.3.jpg" style="width:100%">
+				</div>
+			</div>
+		</div>
+
+    Style guide: 3.3
+*/
+
+/*
+    Silniki V8 - sekcja silników widlasto ośmiocylindrowych
+
+    Poniżej jest przedstawiona podstrona silników R8. Posiada kontener, w którym jest karuzela zdjęć wraz z tekstem nad nim i nagłówkiem.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle" color="black">Silnik widlasty ośmiocylindrowy</span>
+
+			<div class="dottedline"></div>
+			Silnik V8 to rodzaj silnika spalinowego, który wyróżnia się układem cylindrów rozmieszczonych w kształcie
+			litery V. Ma osiem cylindrów, zorganizowanych w dwóch rzędach po cztery. Ten rodzaj silnika jest szczególnie
+			ceniony za moc i siłę obrotową, co sprawia, że jest popularny w samochodach sportowych, luksusowych, a także
+			w większych pojazdach, takich jak SUV-y i ciężarówki.
+			<br><br>
+			Konstrukcja V8 pozwala na osiągnięcie wysokiej mocy przy jednoczesnym zachowaniu kompaktowych wymiarów
+			silnika. Cylindry rozmieszczone pod kątem tworzą specyficzny, równomierny rozkład sił, co przekłada się na
+			gładką i stabilną pracę silnika. Dodatkowo, silniki V8 są znane ze swojego charakterystycznego, głębokiego
+			brzmienia, które jest często kojarzone z mocą i wydajnością.
+			<br><br>
+			Silniki V8 są chętnie stosowane w pojazdach wymagających dużych mocy, jak również w tych, gdzie liczy się
+			prestiż i wyjątkowe wrażenia z jazdy. Pomimo swojej mocy, silniki te są także w stanie zapewnić stosunkowo
+			gładką i komfortową jazdę, co czyni je idealnymi dla szerokiego zakresu zastosowań. <br><br>
+
+			<div class="galeria" style="max-width:900px">
+
+				<div class="centered-content"><img class="mySlides" src="images/v8.0.jpg" style="width:100%"></div>
+				<img class="mySlides" src="images/v8.1.jpg" style="width:100%">
+				<img class="mySlides" src="images/v8.2.jpg" style="width:100%">
+				<img class="mySlides" src="images/v8.3.jpg" style="width:100%">
+			</div>
+		</div>
+
+    Style guide: 3.4
+*/
+
+/*
+    Silniki V12 - sekcja silników widlasto dwunastocylindrowych
+
+    Poniżej jest przedstawiona podstrona silników V12. Posiada kontener, w którym jest karuzela zdjęć wraz z tekstem nad nim i nagłówkiem.
+
+    Markup:
+    <div id="content">
+			<span class="bigtitle" color="black">Silnik widlasty dwunastocylindrowy</span>
+
+			<div class="dottedline"></div>
+			Silnik V12 to wysoko wydajny typ silnika spalinowego, który charakteryzuje się układem dwunastu cylindrów
+			rozmieszczonych w konfiguracji V. W tej konstrukcji, cylindry są podzielone na dwie grupy po sześć,
+			zazwyczaj rozmieszczone pod kątem 60 lub 90 stopni względem siebie. Ta konfiguracja pozwala na uzyskanie
+			niezwykle płynnej i równomiernej pracy silnika, co jest cenione w samochodach o wysokich osiągach i
+			luksusowych pojazdach.
+			<br><br>
+			Jedną z głównych zalet silnika V12 jest jego zdolność do generowania dużej mocy i momentu obrotowego, co
+			przekłada się na wyjątkowe osiągi. Silniki te są często stosowane w samochodach sportowych, ekskluzywnych
+			limuzynach, a także w niektórych modelach luksusowych SUV-ów.
+			<br><br>
+			Ponadto, silniki V12 słyną z wyjątkowej gładkości pracy. Dzięki zrównoważonemu rozkładowi sił i drgań, są
+			one w stanie zapewnić niezwykle komfortową i płynną jazdę, nawet przy wysokich prędkościach obrotowych. To
+			sprawia, że są idealnym wyborem dla pojazdów, w których komfort i prestiż są na równi ważne z osiągami.
+			<br><br>
+			Mimo swoich licznych zalet, silniki V12 są również bardziej złożone i kosztowne w produkcji oraz utrzymaniu
+			niż silniki o mniejszej liczbie cylindrów. Ich rozmiar i waga mogą także wpływać na ogólną wagę i równowagę
+			pojazdu. Jednak dla wielu miłośników motoryzacji, unikalne cechy silnika V12, w tym jego charakterystyczny,
+			głęboki dźwięk, są warte tych kompromisów.
+			<br><br>
+			<div class="galeria" style="max-width:900px">
+
+				<div class="centered-content"><img class="mySlides" src="images/v12.0.jpg" style="width:100%">
+					<img class="mySlides" src="images/v12.1.jpg" style="width:100%">
+					<img class="mySlides" src="images/v12.2.jpg" style="width:100%">
+					<img class="mySlides" src="images/v12.3.jpg" style="width:100%">
+				</div>
+			</div>
+		</div>
+
+    Style guide: 3.5
+*/
+
+/*
+    O autorze - sekcja o autorze strony
+
+    Poniżej jest przedstawiona podstrona o autorze strony. Posiada kontener, w którym odtwarzany filmik.
+
+    Markup:
+	<div id="content">
+		<span class="bigtitle">O autorze</span>
+
+		<div class="dottedline"></div>
+		<div class="centered-content"><iframe width="560" height="315"
+					src="https://www.youtube.com/embed/mijMNdYe1uA?si=6-IhQI0haYnVd1aE" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe></div>
+	</div>
+
+    Style guide: 4.0
+*/
+
+/*
+    Kontakt - sekcja formularza zgłoszeniowego
+
+    Poniżej jest przedstawiona podstrona kontaktowa. Posiada kontener, w którym jest formularz składający się z jednego pola tekstowego, jednego pola e-mail i pola textarea.
+
+    **.form**: Formularze o tej klasie mają marginesy górne ustawione na 5px, i szerekość ustawioną na 40rem.
+    
+	**.form-row**: Kontenery o tej klasie mają marginesy górne ustawione na 1rem.
+
+    Markup:
+	<div id="content">
+            <span class="bigtitle">Formularz zgłoszeniowy </span>
+
+            <div class="dottedline"></div>
+
+            <br>
+
+            <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+                <div class="form-row">
+                    <label for="field-name">Imię*</label>
+                    <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
+                        pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-email">Email*</label>
+                    <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email"
+                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-message">Wiadomość*</label>
+                    <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"
+                        pattern=".+"></textarea>
+                </div>
+                <div class="form-row">
+                    <label class="checkbox-cnt">
+                        <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                        <i class="state" aria-hidden="true"></i>
+                        <span>Zgadzam się z przetwarzaniem danych osobowych.</span>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="submit-btn">
+                        Wyślij
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    Style guide: 5.0
+*/
+
+#social {
+    background-color: #303030;
+    clear: both;
+    color: orange;
+    text-align: center;
+    padding: 40px;
+    width: 917px;
+    min-height: 40px;
+    font-size: 10px;
+    opacity: 0.9;
+    margin-top: 25px;
+	margin: auto;
 }
 
-.dottedline
-{
-	height: 5px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	border-bottom: 2px dotted #444444;
+#social:hover {
+    background-color: black;
 }
 
-.przyklad{
+#footer {
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#footer .heading {
+    color: #FFFFFF;
+}
+
+#footer hr {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+#footer .borderedbox {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+#footer .linklist li {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+#footer input {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+#footer button {
+    border-color: transparent;
+}
+
+#footer input {
+    color: #474747;
+    background-color: #C1C2C4;
+}
+
+#footer input:focus {
+    border-color: #95103B;
+}
+
+#footer button {
+    color: #FFFFFF;
+    background-color: #95103B;
+}
+
+.bigtitle {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.dottedline {
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted #444444;
+}
+
+.przyklad {
     overflow: hidden;
     padding: 0;
-    
-
 }
+
 .przyklad img {
     transition-duration: 3s;
     margin: 0 auto;
     display: block;
 }
+
 .przyklad img:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
@@ -129,131 +738,153 @@
     z-index: 0;
 }
 
-
 .form {
     margin-top: 5px;
-    font-family:sans-serif;
-    max-width:40rem;
+    font-family: sans-serif;
+    max-width: 40rem;
 }
+
 .form .form-row {
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
+
 .form .form-row:last-child {
     margin-bottom: 10px;
 }
+
 .form input[type=text],
 .form input[type=email],
 .form textarea,
 .form .checkbox-cnt .state {
-    box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.07);
 }
+
 .form input[type=text],
 .form input[type=email],
 .form textarea {
-    border-radius:0.2rem;
-    font-family:sans-serif;
-    padding:0.8rem;
-    border:1px solid #aaa;
+    border-radius: 0.2rem;
+    font-family: sans-serif;
+    padding: 0.8rem;
+    border: 1px solid #aaa;
     display: block;
-    width:100%;
-    color:#666;
+    width: 100%;
+    color: #666;
 }
+
 .form input[type=text]:focus,
 .form input[type=email]:focus,
 .form textarea:focus {
-    border-color:#9DC9F5;
-    box-shadow:inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0,0,0,0.07);
-    outline:none;
+    border-color: #9DC9F5;
+    box-shadow: inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0, 0, 0, 0.07);
+    outline: none;
 }
+
 .form textarea {
-    height:10rem;
+    height: 10rem;
 }
+
 .form label {
-    font-weight:bold;
+    font-weight: bold;
     display: block;
-    font-size:0.9rem;
-    margin-bottom:0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
+
 .form .submit-btn {
     font-family: sans-serif;
-    padding:1rem 2rem;
+    padding: 1rem 2rem;
     background: #70B81B;
-    border:0;
-    border-radius:0.2rem;
-    color:#fff;
-    font-size:1.1rem;
+    border: 0;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 1.1rem;
     font-weight: bold;
     transition: 0.3s background-color;
 }
 
-/* checkbox */
 .form .submit-btn:hover {
     background: #7EC927;
 }
+
 .form .checkbox-cnt {
-    padding-left:3rem;
+    padding-left: 3rem;
     position: relative;
     font-weight: normal;
-    font-size:0.85rem;
+    font-size: 0.85rem;
     line-height: 1.1rem;
-    color:#444;
+    color: #444;
     cursor: pointer;
 }
+
 .form .checkbox-cnt .state {
-    width:2rem;
+    width: 2rem;
     height: 2rem;
     display: block;
     position: absolute;
-    left:0;
-    top:0;
-    border:1px solid #aaa;
-    border-radius:0.2rem;
+    left: 0;
+    top: 0;
+    border: 1px solid #aaa;
+    border-radius: 0.2rem;
 }
+
 .form .checkbox-cnt .state:before {
-    width:1rem;
+    width: 1rem;
     height: 1rem;
-    border-radius:0.2rem;
+    border-radius: 0.2rem;
     background: #70B81B;
     display: block;
     position: absolute;
-    left:50%;
-    top:50%;
-    content:'';
-    transform:translate(-50%, -50%) scale(1);
-    opacity:0;
+    left: 50%;
+    top: 50%;
+    content: '';
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
 }
-.form .checkbox-cnt input:checked ~ .state:before {
+
+.form .checkbox-cnt input:checked~.state:before {
     animation: checkboxShowAnim 0.5s 1;
     opacity: 1;
 }
+
 .form .checkbox-cnt input {
-    position:absolute;
-    top:0; left:0;
-    width:2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
     height: 2rem;
     z-index: 2;
-    cursor:pointer;
-    padding:0;
-    margin:0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
     opacity: 0;
 }
+
 @keyframes checkboxShowAnim {
-    0%  { border-radius:50%; transform:translate(-50%, -50%) scale(0.2); }
-    50% { transform:translate(-50%, -50%) scale(1.2); }
-    100% { transform:translate(-50%, -50%) scale(1); }
+    0% {
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0.2);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
-/* walidacja */
 .form input[type=text].error,
 .form input[type=email].error,
 .form textarea.error,
-.form .checkbox-cnt input.error ~ .state {
-    border-color:#E01546;
+.form .checkbox-cnt input.error~.state {
+    border-color: #E01546;
 }
+
 .field-error {
-    color:#E01546;
-    padding:0.5rem 0;
-    font-size:0.8rem;
+    color: #E01546;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width:500px) {
@@ -262,78 +893,76 @@
         width: 100%;
     }
 }
-ol{
-	
-	padding: 0;
-	margin: 0;
-	list-style-type:none;
-	font-size:20px;
-	height:35px;
-	line-height:200%;
-	display: inline-block;
-	}
-ol a
-{
-	color:#ffffff;
-	text-decoration:none;
-	display:block;
-	
-}	
 
-ol > li
-{
-	float:left;
-	width:150px;
-	height:40px;
-	border-right: 1px solid black;
-	
-}
-ol > li:last-child
-{
-	
-	border-right:none;
-	
-}	
+ol {
 
-ol > li:hover{
-	
-	background-color:#696969;
-}
-ol >li:hover > a
-{
-	color: #000000;
-	
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
 }
 
-ol > li > ul
-{
-	
-	list-style-type:none;
-	padding: 0;
-	margin: 0;
-	height:30 px;
-	display:none;
-	}
-ol > li:hover > ul
-{
-	
-	display: block;
-}	
-	
-ol > li > ul >li{
-	
-	background-color: #303030;
-	position: relative;
-	
-	z-index: 100;
-	border-top: 1px dashed black;
-}
-ol > li > ul > li:hover
-{
-	background-color: white;
+ol a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+
 }
 
-ol > li > ul > li:hover > a
-{
-	color: black;
+ol>li {
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px solid black;
+
+}
+
+ol>li:last-child {
+
+    border-right: none;
+
+}
+
+ol>li:hover {
+
+    background-color: #696969;
+}
+
+ol>li:hover>a {
+    color: #000000;
+
+}
+
+ol>li>ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 30 px;
+    display: none;
+}
+
+ol>li:hover>ul {
+
+    display: block;
+}
+
+ol>li>ul>li {
+
+    background-color: #303030;
+    position: relative;
+
+    z-index: 100;
+    border-top: 1px dashed black;
+}
+
+ol>li>ul>li:hover {
+    background-color: white;
+}
+
+ol>li>ul>li:hover>a {
+    color: black;
 }
